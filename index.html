@@ -1,172 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HYBRID NEXUS MEDIA - Coming Soon</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background-color: #f4f4f4;
-            color: #333;
-            line-height: 1.6;
-            overflow-x: hidden; /* Prevent horizontal scroll */
-        }
+---
+layout: home
+title: Your Photography Portfolio
+---
 
-        /* --- Coming Soon Overlay Styles --- */
-        .coming-soon-overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.7); /* Darker overlay */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            z-index: 1000; /* Ensure it's on top */
-            flex-direction: column;
-            color: #fff;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-        }
+<div class="intro">
+    <h2>Welcome to HyBRiD NeXUs Media</h2>
+    <p>Every photograph is a piece of me. I specialize in street, landscape and portrait photography, capturing moments that tell a story.</p>
+    <p>Explore my work below!</p>
+</div>
 
-        .coming-soon-overlay h1 {
-            font-size: 4rem;
-            margin-bottom: 20px;
-            text-align: center;
-        }
-
-        .coming-soon-overlay p {
-            font-size: 1.5rem;
-            text-align: center;
-        }
-
-        /* --- Content Blur Styles --- */
-        .blurred-content {
-            filter: blur(2px); /* Adjust blur strength as needed */
-            pointer-events: none; /* Prevent interaction with blurred content */
-            user-select: none; /* Prevent text selection */
-        }
-
-
-        /* --- Website Content Styles (will be blurred) --- */
-        header {
-            background-color: #222;
-            color: #fff;
-            padding: 1.5rem 0;
-            text-align: center;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 3rem;
-            letter-spacing: 2px;
-        }
-
-        header p {
-            font-size: 1.1rem;
-            opacity: 0.8;
-        }
-
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 25px;
-            padding: 40px 20px;
-            max-width: 1200px;
-            margin: 20px auto;
-        }
-
-        .photo-item {
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-            overflow: hidden;
-            text-align: center;
-            transition: transform 0.3s ease-in-out;
-        }
-
-        .photo-item:hover {
-            transform: translateY(-5px);
-        }
-
-        .photo-item img {
-            width: 100%;
-            height: 250px; /* Fixed height for image placeholders */
-            object-fit: cover; /* Ensures images cover the area without distortion */
-            display: block;
-            background-color: #ccc; /* Placeholder background */
-        }
-
-        .photo-item p {
-            padding: 15px;
-            margin: 0;
-            font-size: 1rem;
-            color: #555;
-            font-style: italic;
-        }
-
-        footer {
-            text-align: center;
-            padding: 2rem 0;
-            background-color: #222;
-            color: #fff;
-            margin-top: 40px;
-            box-shadow: 0 -2px 5px rgba(0,0,0,0.2);
-        }
-    </style>
-</head>
-<body>
-
-    <div class="coming-soon-overlay">
-        <h1>HYBRID NEXUS MEDIA</h1>
-        <p>Eevry photograph is a piece of me.</p>
-        <p>Portfolio is coming soon!</p>
+<main class="gallery">
+    <div class="photo-item">
+        <img src="{{ site.baseurl }}/images/photo1.jpg" alt="Village Photo">
+        <p>Village Life</p>
     </div>
-
-    <div class="blurred-content">
-        <header>
-            <h1>HYBRID NEXUS MEDIA</h1>
-            <p>Where Visions Converge</p>
-        </header>
-
-        <main class="gallery">
-            <div class="photo-item">
-                <img src="images/photo1.jpg" alt="Placeholder Image 1">
-                <p>Village</p>
-            </div>
-            <div class="photo-item">
-                <img src="images/photo2.jpg" alt="Placeholder Image 2">
-                <p>Street Performance</p>
-            </div>
-            <div class="photo-item">
-                <img src="images/photo3.jpg" alt="Placeholder Image 3">
-                <p>Street Performance</p>
-            </div>
-            <div class="photo-item">
-                <img src="images/photo4.jpg" alt="Placeholder Image 4">
-                <p>Street Performance</p>
-            </div>
-            <div class="photo-item">
-                <img src="images/photo5.jpg" alt="Placeholder Image 5">
-                <p>Holy</p>
-            </div>
-            <div class="photo-item">
-                <img src="images/photo6.jpg" alt="Placeholder Image 6">
-                <p>Abstract</p>
-            </div>
-            <div class="photo-item">
-                <img src="images/photo7.jpg" alt="Placeholder Image 6">
-                <p>Note to self</p>
-            </div>
-        </main>
-
-        <footer>
-            <p>&copy; 2025 NEXUS MEDIA. All rights reserved.</p>
-        </footer>
+    <div class="photo-item">
+        <img src="{{ site.baseurl }}/images/photo2.jpg" alt="Street Performance Photo">
+        <p>Energetic Street Performance</p>
     </div>
-
-</body>
-</html>
+    <div class="photo-item">
+        <img src="{{ site.baseurl }}/images/photo7.jpg" alt="Note to Self Photo">
+        <p>A Personal Reflection</p>
+    </div>
+</main>
