@@ -1,21 +1,25 @@
 ---
-layout: default
-title: Home
+layout: home
+title: Your Photography Portfolio
 ---
 
-<!-- Posts Index
-================================================== -->
-<div class="blog-grid-container">
-    {% for post in paginator.posts %}
-        {% include postbox.html %}
-    {% endfor %}
+<div class="intro">
+    <h2>Welcome to HyBRiD NeXUs Media</h2>
+    <p>Every photograph is a piece of me. I specialize in street, landscape and portrait photography, capturing moments that tell a story.</p>
+    <p>Explore my work below!</p>
 </div>
 
-<!-- Pagination
-================================================== -->
-<div class="bottompagination">
-<span class="navigation" role="navigation">
-    {% include pagination.html %}
-</span>
-</div>
-
+<main class="gallery">
+    <div class="photo-item">
+        <img src="{{ site.baseurl }}/images/photo1.jpg" alt="Village Photo">
+        <p>Village Life</p>
+    </div>
+    <div class="photo-item">
+        <img src="{{ site.baseurl }}/images/photo2.jpg" alt="Street Performance Photo">
+        <p>Energetic Street Performance</p>
+    </div>
+    <div class="photo-item">
+        <img src="{{ site.baseurl }}/images/photo7.jpg" alt="Note to Self Photo">
+        <p>A Personal Reflection</p>
+    </div>
+</main>
